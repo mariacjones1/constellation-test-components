@@ -1,0 +1,64 @@
+{
+  "name": "Cts_CTS_TestIconButtonURL",
+  "label": "Test Icon Button URL",
+  "description": "Test Icon Button URL",
+  "organization": "Cts",
+  "version": "1.0.0",
+  "library": "CTS",
+  "allowedApplications": [],
+  "componentKey": "Cts_CTS_TestIconButtonURL",
+  "type": "Field",
+  "subtype": "Text-URL",
+  "icon": "images/pz-url-active.svg",
+  "properties": [
+    {
+      "format": "SELECT",
+      "name": "countryCode",
+      "label": "Country code",
+      "defaultValue": "USA",
+      "source": [
+        {
+          "key": "USA",
+          "value": "United States"
+        },
+        {
+          "key": "CAN",
+          "value": "Canada"
+        },
+        {
+          "key": "AUS",
+          "value": "Australia"
+        },
+        {
+          "key": "JPN",
+          "value": "Japan"
+        },
+        {
+          "key": "IND",
+          "value": "India"
+        },
+        {
+          "key": "TUR",
+          "value": "Turkey"
+        }
+      ]
+    },
+    {
+      "label": "Advanced",
+      "format": "GROUP",
+      "collapsible": true,
+      "properties": [
+        {
+          "name": "testId",
+          "label": "Test ID",
+          "format": "TEXT",
+          "ignorePattern": "[^-_\\p{N}\\p{L}]",
+          "includeAnnotations": false
+        }
+      ]
+    }
+  ],
+  "defaultConfig": {
+    "label": "@L $this.label"
+  }
+}
