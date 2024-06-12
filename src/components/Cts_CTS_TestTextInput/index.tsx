@@ -192,7 +192,7 @@ function CtsCtsTestTextInput(props: CtsCtsTestTextInputProps) {
     if (hasSuggestions) {
       setStatus(undefined);
     }
-    setInputValue(event.target.value.toUpperCase());
+    setInputValue(event.target.value);
     if (value !== event.target.value) {
       handleEvent(actions, 'change', propName, event.target.value);
       hasValueChange.current = true;
