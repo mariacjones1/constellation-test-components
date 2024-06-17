@@ -3,14 +3,13 @@ import StyledCtsCtsTestAlertButtonWrapper from './styles';
 
 // interface for props
 interface CtsCtsTestAlertButtonProps {
-  getPConnect: () => any;
+  onClick: () => void;
 }
 
-// Duplicated runtime code from Constellation Design System Component
-
-function CtsCtsTestAlertButton(props: CtsCtsTestAlertButtonProps) {
+function CtsCtsTestAlertButton({ onClick }: CtsCtsTestAlertButtonProps) {
   const handleClick = () => {
     handleEvent();
+    onClick();
   };
 
   return (
