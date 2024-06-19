@@ -14,7 +14,9 @@ function CtsCtsTestAlertButton({ onClick }: CtsCtsTestAlertButtonProps) {
 
   return (
     <StyledCtsCtsTestAlertButtonWrapper>
-      <button onClick={handleClick}>Show Alert</button>
+      <button type='button' onClick={handleClick}>
+        Show Alert
+      </button>
     </StyledCtsCtsTestAlertButtonWrapper>
   );
 }

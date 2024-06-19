@@ -3,8 +3,7 @@ import {
   Checkbox as CosmosCheckbox,
   CheckboxGroup,
   withConfiguration,
-  BooleanDisplay,
-  Text
+  BooleanDisplay
 } from '@pega/cosmos-react-core';
 import StyledCtsCtsTestDisabledCheckboxWrapper from './styles';
 import CtsCtsTestAlertButton from '../Cts_CTS_TestAlertButton';
@@ -19,7 +18,6 @@ interface CtsCtsTestDisabledCheckboxProps {
   hideLabel?: boolean;
   testId?: string;
   displayMode?: string;
-  variant?: string;
   trueLabel?: string;
   falseLabel?: string;
   additionalProps?: object;
@@ -35,7 +33,6 @@ function CtsCtsTestDisabledCheckbox(props: CtsCtsTestDisabledCheckboxProps) {
     testId,
     additionalProps = {},
     displayMode,
-    variant = 'inline',
     trueLabel,
     falseLabel
   } = props;
